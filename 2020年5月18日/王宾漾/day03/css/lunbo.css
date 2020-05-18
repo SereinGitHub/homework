@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lbcontent{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    padding: 15px;
+    background-color: darkcyan;
+    margin: 50px auto;
+}
+.lbcontent .item{
+    position: absolute;
+}
+.lbcontent #right{
+    position: absolute;
+    right: 0;
+    top: 140px;
+    z-index: 100;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    background-color: rgba(0,0,0,.7);
+}
+.lbcontent #left{
+    position: absolute;
+    left: 0;
+    top: 140px;
+    z-index: 100;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    background-color: rgba(0,0,0,.7);
+}
+.lbcontent:hover #right{
+    opacity: 1;
+    transition: all .3s linear;
+}
+.lbcontent:hover #left{
+    opacity: 1;
+    transition: all .3s linear;
+}
+.lbcontent .item{
+    border: 3px solid white;
+}
+.lbcontent li{
+    list-style-type: none;
+    float: left;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.lbcontent ul{
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    margin-left: 80px;
+}
+.lbcontent ul li:nth-of-type(1){
+    margin-left: 8px;
+}
+.lbcontent .active{
+    border: 2px solid red;
+}
