@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.box {
+    height: 454px;
+    width: 730px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.lunbo li {
+    position: absolute;
+    display: none;
+}
+
+.lunbo li:first-child {
+    display: block;
+}
+
+.arrow {
+    display: none;
+}
+
+.box:hover .arrow {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.circle {
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 75px);
+}
+
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.active {
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .4);
+}
+
