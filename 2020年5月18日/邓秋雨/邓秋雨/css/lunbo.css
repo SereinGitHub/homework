@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#lunbo{
+    position: relative;
+    width: 800px;
+    height: 580px;
+    margin: 20px auto;
+}
+#lunbo #showImg{
+    display: inline-block;
+    width: 800px;
+    height: 580px;
+}
+#prev,#next{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    top: 250px;
+}
+#prev{
+    left: 10px;
+}
+#next{
+    right: 10px;
+}
+#lunbo #spot{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+#lunbo #spot span{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 2px;
+}
+#lunbo #spot .active{
+    background-color: rgba(255,255,255,1);
+}

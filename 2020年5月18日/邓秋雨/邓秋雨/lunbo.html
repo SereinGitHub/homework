@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/lunbo.css">
+    <title>轮播</title>
+</head>
+<body>
+<div id="lunbo">
+    <img src="imgs/1.jpg" alt="" id="showImg">
+</div>
+<script src="js/jquery-3.4.0.js"></script>
+<script src="js/lunbo.js"></script>
+<script type="text/javascript">
+    lunbo.init({
+        imgArr:["imgs/1.jpg","imgs/2.jpg","imgs/3.jpg","imgs/4.jpg","imgs/5.jpg","imgs/6.jpg"],
+        showSpot:true,
+        autoplay:true
+    });
+</script>
+</body>
+</html>
