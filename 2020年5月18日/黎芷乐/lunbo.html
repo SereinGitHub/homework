@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img>img{
+            width: 1000px ;
+            height: 560px;
+            float: left;
+        }
+        .father{
+            width: 1000px;
+            height: 560px;
+            /*border: 1px solid red;*/
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .img{
+            width: 5000px;
+            height: 560px;
+            /*border: 1px blue solid;*/
+
+        }
+        #left,#right{
+            cursor: pointer;
+            font-size: 40px;
+            display: inline-block;
+            width: 40px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            top: calc((560px - 70px)/2);
+            background-color: rgba(0,0,0,.3);
+            position: absolute;
+            color: white;
+            border-radius: 0 8px 8px 0;
+        }
+        #left{
+            left: 0px;
+        }
+        #right{
+            left: 960px;
+            border-radius:  8px 0 0 8px ;
+        }
+        .yuan{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 10px;
+            background-color: rgba(255,255,255,.3);
+            display: inline-block;
+            text-align: center;
+        }
+
+        #yuans{
+            position: absolute;
+            left: 440px;
+            top: 520px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="content">-->
+        <div class="father">
+            <div class="img" id="content">
+                <!--<span id="left"> &lt; </span>-->
+                <img src="images/1.jpg" alt=""/>
+                <img src="images/2.jpg" alt=""/>
+                <img src="images/3.jpg" alt=""/>
+                <img src="images/4.jpg" alt=""/>
+                <img src="images/5.jpg" alt=""/>
+                <!--<span id="right"> &gt; </span>-->
+            </div>
+            <div id="son">
+                <div id="page"></div>
+                <div id="yuans"></div>
+            </div>
+        </div>
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/lunbo.js">
+        lunbo.init({
+            time:2000
+        });
+    </script>
+</body>
+</html>
